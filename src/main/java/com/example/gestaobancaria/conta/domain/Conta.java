@@ -1,4 +1,4 @@
-package com.example.gestaobancaria.conta.api.domain;
+package com.example.gestaobancaria.conta.domain;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;

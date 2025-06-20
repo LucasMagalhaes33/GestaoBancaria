@@ -1,4 +1,4 @@
-package com.example.gestaobancaria.conta.api.domain;
+package com.example.gestaobancaria.conta.domain;
 
 import com.example.gestaobancaria.conta.api.dto.ContaRequestDTO;
 import com.example.gestaobancaria.conta.api.dto.ContaResponseDTO;
