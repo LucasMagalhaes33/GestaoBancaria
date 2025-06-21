@@ -40,8 +40,8 @@ public class ContaResource {
             @ApiResponse(responseCode = "404", description = "Conta não encontrada")
     })
     @GetMapping
-    public ResponseEntity<ContaResponseDTO> buscarConta(@RequestParam Long numero_conta) {
-        ContaResponseDTO conta = contaService.buscarConta(numero_conta);
+    public ResponseEntity<ContaResponseDTO> buscarConta(@RequestParam Long numeroConta) {
+        ContaResponseDTO conta = contaService.buscarConta(numeroConta);
         return ResponseEntity.ok(conta);
     }
 }
