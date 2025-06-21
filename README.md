@@ -73,12 +73,12 @@ A documentação completa da API, com todos os detalhes e a possibilidade de tes
 * **Realizar Transação**: `POST /transacao`
     ```json
     {
-      "forma_pagamento": "DEBITO",
+      "forma_pagamento": "D",
       "numero_conta": 12345,
       "valor": 50.00
     }
     ```
-    * Valores para `forma_pagamento`: `PIX`, `CREDITO`, `DEBITO`.
+    * Valores para `forma_pagamento`: `P`, `C`, `D`.
 
 ---
 
