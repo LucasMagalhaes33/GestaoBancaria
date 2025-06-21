@@ -1,5 +1,6 @@
 package com.example.gestaobancaria.conta.domain;
 
+import com.example.gestaobancaria.shared.exception.SaldoInsuficienteException;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 
@@ -29,7 +30,7 @@ public class Conta {
 
     public void debitar(BigDecimal valor) {
         if (this.saldo.compareTo(valor) < 0) {
-            throw new IllegalArgumentException("Saldo insuficiente na conta " + this.numeroConta);
+            throw new SaldoInsuficienteException("Saldo insuficiente na conta " + this.numeroConta);
         }
         this.saldo = this.saldo.subtract(valor);
     }
