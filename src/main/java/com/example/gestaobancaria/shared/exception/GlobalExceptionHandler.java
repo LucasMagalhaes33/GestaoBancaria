@@ -21,7 +21,7 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
     }
 
-    @ExceptionHandler(ContaJaExistenteException.class)
+    @ExceptionHandler({ContaJaExistenteException.class, FormaPagamentoInvalidaException.class})
     public ResponseEntity<ApiErrorResponse> handleBadRequest(RuntimeException ex) {
         ApiErrorResponse response = new ApiErrorResponse(
                 HttpStatus.BAD_REQUEST.value(),
