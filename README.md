@@ -34,8 +34,7 @@ O projeto segue princípios de **Clean Architecture** e **Cognitive-Driven Desig
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git](https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git)
-    cd SEU_REPOSITORIO
+    (https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git)](https://github.com/LucasMagalhaes33/GestaoBancaria)
     ```
 
 2.  **Compile e execute a aplicação com o Maven Wrapper:**
